@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #172033;
+  background: #f4f6fb;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(99, 102, 241, .12), transparent 28rem),
+    radial-gradient(circle at 88% 85%, rgba(14, 165, 233, .10), transparent 26rem),
+    #f5f7fc;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 18px 20px;
+}
+
+.login-card {
+  width: min(100%, 430px);
+  padding: 42px 42px 32px;
+  background: rgba(255, 255, 255, .94);
+  border: 1px solid #e8ebf3;
+  border-radius: 22px;
+  box-shadow: 0 24px 70px rgba(35, 48, 86, .10);
+}
+
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  color: white;
+  background: linear-gradient(135deg, #6366f1, #4338ca);
+  font: 800 23px 'Manrope', sans-serif;
+  box-shadow: 0 8px 18px rgba(79, 70, 229, .25);
+}
+
+.eyebrow {
+  margin: 28px 0 8px;
+  color: #6366f1;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 0;
+  font: 800 29px 'Manrope', sans-serif;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  margin: 10px 0 28px;
+  color: #7a8397;
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  height: 49px;
+  padding: 0 14px;
+  border: 1px solid #dfe3ed;
+  border-radius: 10px;
+  outline: none;
+  color: #172033;
+  background: #fff;
+  font: inherit;
+  font-size: 14px;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+input::placeholder { color: #a6adbb; }
+input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, .12);
+}
+
+.password-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 19px;
+}
+
+.password-heading label { margin-bottom: 9px; }
+
+a {
+  color: #5558df;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+a:hover { text-decoration: underline; }
+
+.password-wrap { position: relative; }
+.password-wrap input { padding-right: 62px; }
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: #626b80;
+  cursor: pointer;
+  font: 600 12px 'DM Sans', sans-serif;
+}
+
+.error {
+  display: block;
+  min-height: 16px;
+  margin-top: 5px;
+  color: #dc2626;
+  font-size: 11px;
+}
+
+.submit-button {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 13px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  background: #4f46e5;
+  cursor: pointer;
+  font: 700 14px 'DM Sans', sans-serif;
+  box-shadow: 0 9px 18px rgba(79, 70, 229, .19);
+  transition: background .2s, transform .2s;
+}
+.submit-button:hover { background: #4338ca; transform: translateY(-1px); }
+.submit-button span { font-size: 19px; }
+
+.form-message {
+  min-height: 18px;
+  margin: 10px 0 0;
+  text-align: center;
+  font-size: 12px;
+  color: #15803d;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 17px 0;
+  color: #a0a7b5;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+.divider::before, .divider::after {
+  content: '';
+  height: 1px;
+  flex: 1;
+  background: #e9ebf1;
+}
+
+.google-button {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #e0e4ec;
+  border-radius: 10px;
+  background: white;
+  color: #30394b;
+  cursor: pointer;
+  font: 600 13px 'DM Sans', sans-serif;
+}
+.google-button:hover { background: #f9faff; }
+.google-g {
+  margin-right: 8px;
+  color: #4285f4;
+  font: 800 17px Arial, sans-serif;
+}
+
+.signup-text {
+  margin: 25px 0 0;
+  text-align: center;
+  color: #7a8397;
+  font-size: 13px;
+}
+.signup-text a { font-size: 13px; }
+
+.terms {
+  margin: 24px 0 0;
+  text-align: center;
+  color: #a0a7b5;
+  font-size: 10px;
+  line-height: 1.7;
+}
+.terms a { font-size: inherit; color: #777f92; }
+
+footer {
+  margin-top: 22px;
+  color: #9aa2b1;
+  font-size: 11px;
+}
+
+@media (max-width: 480px) {
+  .page { padding: 20px 14px; }
+  .login-card { padding: 32px 24px 26px; border-radius: 18px; }
+  h1 { font-size: 26px; }
+}
